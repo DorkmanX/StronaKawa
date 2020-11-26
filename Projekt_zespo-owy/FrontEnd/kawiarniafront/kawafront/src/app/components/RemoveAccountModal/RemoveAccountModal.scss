@@ -1,0 +1,82 @@
+@media only screen and (max-width: 900px) {
+  .removeAccountModal {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .removeAccountModal {
+    &__button {
+      width: 100% !important;
+    }
+  }
+}
+.removeAccountModal {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  padding: 10%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  &__container {
+    display: flex;
+
+    width: 60%;
+  }
+  &__button {
+    cursor: pointer;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    margin: 1%;
+    padding: 5%;
+  }
+}
+.remove {
+  background-color: rgba(red, 0.8);
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: rgba(red, 0.95);
+  }
+}
+.cancel {
+  color: black;
+  background-color: rgba(cornflowerblue, 0.8);
+  transition: 0.5s ease-in-out;
+  &:hover {
+    background-color: rgba(cornflowerblue, 0.95);
+  }
+}
+.Modal {
+  color:white;
+  border-radius: 5px;
+  transform: translate(50%, 50%);
+  min-height: 50vh;
+  width: 50%;
+  background-color: rgba(black,0.95);
+}
+@media only screen and (max-width: 900px) {
+  .Modal {
+    border-radius: 5px;
+    transform: translate(0%, 50%);
+    min-height: 50vh;
+    width: 100%;
+    background-color: rgba(black,0.95);
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(white, 0.4);
+}

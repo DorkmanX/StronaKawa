@@ -1,0 +1,54 @@
+.deleteItemFromBucket {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(450px);
+  &__container {
+    padding: 10%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  &__field {
+    &:nth-child(even) {
+      background-color: rgba(white, 0.4);
+      border-radius: 5px;
+    }
+
+    display: flex;
+    align-content: flex-end;
+    justify-items: center;
+
+    display: flex;
+  }
+
+  &__text {
+    width: 30%;
+    font-size: large;
+    font-weight: 700;
+    padding: 2%;
+  
+  }
+  &__button {
+    color:white;
+    background-color: rgba(white, 0.4);
+    margin:1%;
+    border: none;
+    width: 50%;
+    font-weight: 900;
+    font-size: large;
+    padding: 2%;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(white, 0.8);
+    }
+  }
+}

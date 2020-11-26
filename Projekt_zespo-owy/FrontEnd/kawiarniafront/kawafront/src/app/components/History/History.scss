@@ -1,0 +1,78 @@
+$bgurl: "https://i.ibb.co/hKTYq0m/background-both-sides.png";
+.radio{
+  display: flex;
+  font-size: larger;
+  color:white;
+  &__field{
+    padding:.5%;
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10%;
+  min-height: 100vh;
+  &__text {
+    color: white;
+    padding: 10%;
+  }
+  &__fadeIn {
+    margin: 0;
+  }
+  &__field {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    width: 100%;
+    color: white;
+    transition: all 0.4s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    &:nth-of-type(even) {
+      background: rgba(0, 0, 0, 0.7);
+
+      //background-color: darken($color: white, $amount: 4);
+    }
+    &:nth-of-type(odd) {
+      background: rgba(0, 0, 0, 0.5);
+
+      //background-color: darken($color: white, $amount: 4);
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      cursor: pointer;
+      border-color: cornflowerblue;
+    }
+  }
+  &__block {
+    width: 20%;
+    padding: 1%;
+    font-size: 1.5vmax;
+    //border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .history {
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+    justify-content: center;
+
+    &__field {
+      width: 100%;
+      //height: 100vh;
+      //border: none;
+    }
+  }
+}

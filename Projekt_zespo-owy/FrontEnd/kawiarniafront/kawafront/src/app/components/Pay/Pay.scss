@@ -1,0 +1,33 @@
+$bgurl: "https://i.ibb.co/hKTYq0m/background-both-sides.png";
+
+.pay {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  & iframe {
+    height: 80vh;
+    outline: none;
+    border: 1px solid #757575;
+    border-radius: 10px;
+  }
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pay {
+    &__section {
+      padding: 0;
+    }
+  }
+}

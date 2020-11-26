@@ -1,0 +1,24 @@
+.languageChooser {
+  color:white;
+  background: none;
+  border: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 700;
+  &__field {
+    border: none;
+    padding: 3%;
+    min-width: 10%;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 900px) {
+    .languageChooser {
+      &__field { 
+        padding:5%;
+        margin:3%;
+      }
+    }
+  }
